@@ -79,12 +79,32 @@ font-family: 'Titan One', cursive;
     font-family: 'Averia Libre', cursive;
 }
 
+.side_img {
+    display: flex;
+    gap: 118px;
+    position: absolute;
+}
+
+.page1_container {
+    display: flex;
+    padding: 100px 250px;
+}
+
+.class1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10;
+    align-content: center;
+}
+
 .page1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    align-content: center;
 }
 
 .page1>h1 {
@@ -104,7 +124,8 @@ font-family: 'Titan One', cursive;
     font-weight: 700;
     font-size: 20px;
     font-family: 'Lugrasimo', cursive;
-    padding-top: 30px;
+    padding-top: 15 px;
+    padding-bottom: 25px;
     letter-spacing: 2px;
 }
 
@@ -127,17 +148,13 @@ font-family: 'Titan One', cursive;
     display: flex;
     flex-direction: row;
     position: absolute;
-    padding-top: 360px;
-    padding-left: 70px;
+    padding-top: 330px;
+    padding-left: 100px;
 }
 
 .img_container>p {
-    height: 145px;
-    width: 150px;
+    height: 150px;
+    width: 160px;
     background-color: rgb(255, 255, 249);
     padding: 7px;
-}
-
-.img_container>img {
-    box-shadow: 1px 1px 10px 10px rgb(77, 26, 94);
 }
