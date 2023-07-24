@@ -29,16 +29,29 @@ font-family: 'Titan One', cursive;
         box-sizing: border-box;
         width: 100%;
     }
+    
+    @media screen and (max-width:600px) {
+        .container {
+            width: 100%;
+        }
+        .navbar {
+            width: 50%;
+        }
+        .main {
+            width: 50%;
+        }
+    }
     /* navbar*/
     
     .navbar {
         display: flex;
         width: 100%;
+        box-sizing: border-box;
     }
     
     .logo {
         padding: 20px;
-        letter-spacing: 1px;
+        letter-spacing: 0.1rem;
         display: flex;
         flex-direction: column;
     }
@@ -69,14 +82,13 @@ font-family: 'Titan One', cursive;
     }
     
     .nav>a {
-        display: block;
+        display: inline-block;
         padding: 35px;
         text-decoration: none;
         font-size: 20px;
         color: rgb(207, 3, 30);
         font-weight: 600;
         font-family: 'Averia Libre', cursive;
-        width: auto;
     }
     /* main*/
     
@@ -84,11 +96,21 @@ font-family: 'Titan One', cursive;
         display: flex;
         gap: 118px;
         position: absolute;
+        box-sizing: border-box;
+    }
+    
+    .main {
+        box-sizing: border-box;
+        background-image: url(images/img33.png), url(images/img35.png);
+        background-repeat: no-repeat;
+        background-position: left, right;
+        background-size: contain;
     }
     
     .page1_container {
         display: flex;
         padding: 100px 250px;
+        box-sizing: border-box;
     }
     
     .class1 {
@@ -191,6 +213,7 @@ font-family: 'Titan One', cursive;
     
     .property_div {
         position: relative;
+        box-sizing: border-box;
     }
     
     .page2 {
@@ -308,6 +331,7 @@ font-family: 'Titan One', cursive;
     
     .service_div {
         position: relative;
+        box-sizing: border-box;
     }
     
     .service_div>h2 {
@@ -465,7 +489,11 @@ font-family: 'Titan One', cursive;
     }*/
     /* footer */
     
-    .footer {
+    .footer_div {
+        box-sizing: border-box;
+    }
+    
+    .footer7 {
         display: flex;
         gap: 100px;
         background-color: bisque;
